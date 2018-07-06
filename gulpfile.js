@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const gulpPngquant = require('gulp-pngquant');
-var rimraf = require('gulp-rimraf');
+const rimraf = require('gulp-rimraf');
 
 
 
