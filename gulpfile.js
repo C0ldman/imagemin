@@ -1,11 +1,18 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const gulpPngquant = require('gulp-pngquant');
+var rimraf = require('gulp-rimraf');
 
-gulp.task('default',['gif','jpg','jpeg','svg','png'], () =>
+
+
+gulp.task('default',['clearDest','gif','jpg','jpeg','svg','png'], () =>
         console.log('Done!')
 );
 
+gulp.task('clearDest', ()=>
+   gulp.src('optimized_images/*')
+   .pipe(rimraf())
+    );
 
 gulp.task('gif',()=>gulp.src('original_images/*.gif')
     .pipe(imagemin([

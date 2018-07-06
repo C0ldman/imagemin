@@ -12,6 +12,8 @@
     "gulp": "^3.9.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-pngquant": "^1.0.12",
-    "imagemin-pngquant": "^5.1.0"
+    "gulp-rimraf": "^0.2.2",
+    "imagemin-pngquant": "^5.1.0",
+    "rimraf": "^2.6.2"
   }
 }
