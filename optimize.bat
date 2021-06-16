@@ -1,1 +1,1 @@
-gulp && pause
+npm run start
